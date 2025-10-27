@@ -501,16 +501,16 @@ shared_ptr<Plot> placement_plot_prompt(
 
 // Prompts the user for the number of players the game will be played with
 int player_count_prompt() {
-    cout << "Blatan can be played with 2-4 people. ";
+    cout << "Hex Settlers can be played with 2-4 people. ";
     int count = -1;
     while (true) {
         // Loop just handles the int input and validation with correct numbers of players (2, 3, or 4)
         count = generic_int_prompt(
             "Please enter a number of players (2, 3, or 4) ",
-            "Sorry, you cannot play Blatan with... *cricket noises* ...players. ",
+            "Sorry, you cannot play Hex Settlers with... *cricket noises* ...players. ",
             "Sorry, the number you entered is not a valid input.");
         if (count < 2 || count > 4) {
-            cout << "Unfortunately, you cannot play Blatan with " << count << " players." << endl;
+            cout << "Unfortunately, you cannot play Hex Settlers with " << count << " players." << endl;
             continue;
         }
         break;
@@ -1508,8 +1508,8 @@ void modify_trade_side(
 void help_message() {
     cout << "| How To Play |\n";
     cout << "Settlers of Catan is a game about collecting and managing resources and expanding your settlements across the island." << endl;
-    cout << "Unfortunately, this is not Settlers of Catan, but rather Settlers of Blatan..." << endl;;
-    cout << "Settlers of Blatan has the same rules as Settlers of Catan, so for any specific\n"
+    cout << "Unfortunately, this is not Settlers of Catan, but rather Hex Settlers..." << endl;;
+    cout << "Hex Settlers has the same rules as Settlers of Catan, so for any specific\n"
             "rules queries, you may need to seek an official rulebook" << endl;
     cout << "\n| Basics |\n";
     cout << " - A players turn starts with rolling two six sided dice.\n"
@@ -1524,7 +1524,7 @@ void help_message() {
     cout << " - ... but there are also special awards for players with both the largest army of knight cards played, and the longest\n"
             "continuous road. Both of these are worth 2 points." << endl;
     cout << " - You may trade resources with other willing players on your turn, or the bank but at a steep cost (4:1)\n" << endl;
-    cout << "That's pretty much it for the basics of Blatan. Good luck!\n" << endl;
+    cout << "That's pretty much it for the basics of Hex Settlers. Good luck!\n" << endl;
 }
 
 void recipe_message() {
@@ -1543,5 +1543,5 @@ void recipe_message() {
 }
 
 void welcome_message() {
-    cout << "\n| Welcome to Settlers of Blatan |\n" << endl;
+    cout << "\n| Welcome to Hex Settlers |\n" << endl;
 }

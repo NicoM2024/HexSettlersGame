@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.8)
-project(M1OEP)
+project(HexSettlers)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(M1OEP
+add_executable(HexSettlers
         main.cpp
         CppFiles/Board.cpp
         CppFiles/Construct.cpp
